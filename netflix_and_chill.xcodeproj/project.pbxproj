@@ -13,6 +13,7 @@
 		12A6E2B11BF55FE40055020E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A6E2AF1BF55FE40055020E /* Main.storyboard */; };
 		12A6E2B31BF55FE40055020E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A6E2B21BF55FE40055020E /* Assets.xcassets */; };
 		12A6E2B61BF55FE40055020E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A6E2B41BF55FE40055020E /* LaunchScreen.storyboard */; };
+		F691F735C2F769C682E0502F /* libPods-netflix_and_chill.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D190A94CD65B64713866FFE0 /* libPods-netflix_and_chill.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		12A6E2B21BF55FE40055020E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12A6E2B51BF55FE40055020E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12A6E2B71BF55FE40055020E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F6AD7C34E132C9A7862B4FB /* Pods-netflix_and_chill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netflix_and_chill.release.xcconfig"; path = "Pods/Target Support Files/Pods-netflix_and_chill/Pods-netflix_and_chill.release.xcconfig"; sourceTree = "<group>"; };
+		928C3859C3CBCCDC3D3FE257 /* Pods-netflix_and_chill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netflix_and_chill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-netflix_and_chill/Pods-netflix_and_chill.debug.xcconfig"; sourceTree = "<group>"; };
+		D190A94CD65B64713866FFE0 /* libPods-netflix_and_chill.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-netflix_and_chill.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F691F735C2F769C682E0502F /* libPods-netflix_and_chill.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				12A6E2A51BF55FE40055020E /* netflix_and_chill */,
 				12A6E2A41BF55FE30055020E /* Products */,
+				41CB4CDA52CA737E404142C1 /* Pods */,
+				47B79A53A610604E7D225C6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		41CB4CDA52CA737E404142C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				928C3859C3CBCCDC3D3FE257 /* Pods-netflix_and_chill.debug.xcconfig */,
+				5F6AD7C34E132C9A7862B4FB /* Pods-netflix_and_chill.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		47B79A53A610604E7D225C6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D190A94CD65B64713866FFE0 /* libPods-netflix_and_chill.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12A6E2BA1BF55FE40055020E /* Build configuration list for PBXNativeTarget "netflix_and_chill" */;
 			buildPhases = (
+				BBC62FF010EF1E82E06D11AB /* Check Pods Manifest.lock */,
 				12A6E29F1BF55FE30055020E /* Sources */,
 				12A6E2A01BF55FE30055020E /* Frameworks */,
 				12A6E2A11BF55FE30055020E /* Resources */,
+				03C7AF55E38FBEE99330FF8D /* Embed Pods Frameworks */,
+				6034A02C5851BEA7AC6318AE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03C7AF55E38FBEE99330FF8D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-netflix_and_chill/Pods-netflix_and_chill-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6034A02C5851BEA7AC6318AE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-netflix_and_chill/Pods-netflix_and_chill-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBC62FF010EF1E82E06D11AB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		12A6E29F1BF55FE30055020E /* Sources */ = {
@@ -262,6 +337,7 @@
 		};
 		12A6E2BB1BF55FE40055020E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928C3859C3CBCCDC3D3FE257 /* Pods-netflix_and_chill.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = netflix_and_chill/Info.plist;
@@ -273,6 +349,7 @@
 		};
 		12A6E2BC1BF55FE40055020E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F6AD7C34E132C9A7862B4FB /* Pods-netflix_and_chill.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = netflix_and_chill/Info.plist;
@@ -301,6 +378,7 @@
 				12A6E2BC1BF55FE40055020E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
