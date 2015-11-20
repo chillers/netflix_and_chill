@@ -20,5 +20,5 @@ OPTIONAL
 Able to modify profile and save changes (2)  
 Able to build movie profile by getting a “stack” of movies and swiping left/right/up to dislike/like/favorite (3)  
 Calendar view to schedule movie screening (1)  
-Force touch to reveal profile (1)
+Force touch to reveal profile (1)  
 Push notifications on match and chat (1)
